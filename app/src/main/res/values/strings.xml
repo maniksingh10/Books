@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="player1">Stephen King</string>
+    <string name="nothing">¯\\_(ツ)_/¯ Nothing Found</string>
+</resources>
