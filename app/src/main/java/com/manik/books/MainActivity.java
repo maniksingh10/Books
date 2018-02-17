@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
+    //Sends Intent to Display class with the String of book searched
     public void bunSearch(View view) {
         EditText ed1 = findViewById(R.id.etSearch);
         if (ed1.getText().toString().isEmpty()) {
