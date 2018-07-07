@@ -14,6 +14,10 @@ public class BookObject {
     private double mRating;
     private int mPages;
 
+    public BookObject(String mBookName, int mPages) {
+        this.mBookName = mBookName;
+        this.mPages = mPages;
+    }
 
     public BookObject(String mBookName, String mAuthorName, String mDescription, String mCategories, String mUrl, double mRating, int mPages) {
         this.mBookName = mBookName;

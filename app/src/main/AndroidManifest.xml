@@ -16,7 +16,6 @@
         <activity
             android:name=".MainActivity"
             android:logo="@mipmap/bookicon" />
-
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Splash">
@@ -24,16 +23,20 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".Display"
             android:label="Books"
             android:logo="@mipmap/bookicon"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity android:name=".SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
