@@ -92,9 +92,6 @@ public class Display extends MainActivity  {
 //        });
 
 
-        mEmptyStateTextView = findViewById(R.id.empty_view);
-        allBooks.setEmptyView(mEmptyStateTextView);
-
         // Get a reference to the ConnectivityManager to check state of network connectivity
         ConnectivityManager connMgr = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -115,7 +112,6 @@ public class Display extends MainActivity  {
             // Otherwise, display error
             // First, hide loading indicator so error message will be visible
 
-            loadingIndicator.setVisibility(View.GONE);
 
             // Update empty state with no connection error message
             mEmptyStateTextView.setText("No Internet Connection");
@@ -145,7 +141,7 @@ public class Display extends MainActivity  {
 //    public void onLoaderReset(Loader<List<BookObject>> loader) {
 //        mCustomAdapter.clear();
 //    }
-    }
+
 
     private String addSearch() {
         Bundle bu = getIntent().getExtras();
